@@ -12,10 +12,10 @@
 		});
 		function checkGroup(id, target) {
 			var open = false;
-			var obj = jQuery(id);
+			var obj = $(id);
 			obj.find(".accordion-group").each(function(i, item){
-				jQuery(item).find(".collapse").each(function(i, group_item){
-					if (jQuery(group_item).hasClass("in")) {
+				$(item).find(".collapse").each(function(i, group_item){
+					if ($(group_item).hasClass("in")) {
 						open = true;
 					}
 				});
